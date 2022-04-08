@@ -41,3 +41,10 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
+.goal-form__enter-area.invalid label {
+  color: red;
+}
+.goal-form__enter-area.invalid input {
+  border-color: red;
+  background-color: rgb(252, 176, 176);
+}
