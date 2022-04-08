@@ -5,6 +5,8 @@
   align-items: center;
   margin-top: 10px;
   padding: 0px 50px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .goal-form__enter-area {
   display: flex;
@@ -30,16 +32,6 @@
   border: 1px solid #6c3357;
   outline: 1px solid #6c3357;
   background-color: #f8cae9;
-}
-.goal-form__actions-area button {
-  border: none;
-  height: 50px;
-  padding: 0px 30px;
-  margin-top: 10px;
-  background-color: #800054;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
 }
 .goal-form__enter-area.invalid label {
   color: red;

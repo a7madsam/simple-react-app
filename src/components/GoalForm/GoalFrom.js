@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './GoalFrom.css';
-import Card from "../UI/Card";
+import Button from "../UI/Button";
 const GoalFrom = (props) => {
     const [goalInput, setGoalInput] = useState('');
     const [isValid, setIsValid] = useState(true);
@@ -20,17 +20,17 @@ const GoalFrom = (props) => {
         setGoalInput('');
     }
     return (
-        <Card className="goal-form">
+        <div className="goal-form">
             <form onSubmit={onSubmitHandler}>
                 <div className={`goal-form__enter-area ${!isValid ? 'invalid' : ''}`}>
                     <label>Course Goal</label>
                     <input type="text" value={goalInput} onChange={getDataHandler} />
                 </div>
                 <div className="goal-form__actions-area">
-                    <button type="submit">Add Goal</button>
+                    <Button type="submit">Add Goal</Button>
                 </div>
             </form>
-        </Card>
+        </div>
     );
 }
 export default GoalFrom;
