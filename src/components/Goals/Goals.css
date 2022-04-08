@@ -1,0 +1,25 @@
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+}
+.goals-container__goal {
+  position: relative;
+  width: 38rem;
+  padding: 15px 0px;
+  background-color: #800054;
+  color: white;
+  text-indent: 30px;
+}
+.goals-container__goal::before {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+  left: 10px;
+  top: 34%;
+}
