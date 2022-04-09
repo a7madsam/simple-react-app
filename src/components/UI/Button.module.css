@@ -1,6 +1,6 @@
-button {
+.button {
   border: none;
-  height: 50px;
+  height: 40px;
   padding: 0px 30px;
   margin-top: 10px;
   background-color: #800054;
@@ -10,6 +10,11 @@ button {
   transition: 0.3s;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-button:hover {
+.button:hover {
   background-color: #c11183;
+}
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
 }

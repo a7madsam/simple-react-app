@@ -12,7 +12,7 @@
   padding: 15px 0px;
   background-color: #800054;
   color: white;
-  text-indent: 30px;
+  padding-left: 30px;
 }
 .goals-container__goal::before {
   content: "";

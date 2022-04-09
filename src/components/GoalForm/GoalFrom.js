@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './GoalFrom.css';
+import styles from './GoalFrom.module.css';
 import Button from "../UI/Button";
 const GoalFrom = (props) => {
     const [goalInput, setGoalInput] = useState('');
@@ -20,13 +20,13 @@ const GoalFrom = (props) => {
         setGoalInput('');
     }
     return (
-        <div className="goal-form">
+        <div className={styles["goal-form"]}>
             <form onSubmit={onSubmitHandler}>
-                <div className={`goal-form__enter-area ${!isValid ? 'invalid' : ''}`}>
+                <div className={`${styles['goal-form__enter-area']} ${!isValid ? styles['invalid'] : ''}`}>
                     <label>Course Goal</label>
                     <input type="text" value={goalInput} onChange={getDataHandler} />
                 </div>
-                <div className="goal-form__actions-area">
+                <div className={styles["goal-form__actions-area"]}>
                     <Button type="submit">Add Goal</Button>
                 </div>
             </form>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import styles from './App.module.css';
 import GoalForm from './components/GoalForm/GoalFrom'
 import Goals from './components/Goals/Goals';
 function App() {
@@ -20,7 +20,7 @@ function App() {
     setGoalsData(filteredGoalsData);
   }
   return (
-    <div className="App">
+    <div className={styles["App"]}>
       <GoalForm onAddGoalClick={addGoalHandler} />
       <Goals content={goalsData} onDeleteSelectedGoal={deleteSelectedGoalHandler} />
     </div>

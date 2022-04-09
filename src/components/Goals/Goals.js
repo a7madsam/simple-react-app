@@ -1,14 +1,14 @@
 import React from "react";
-import './Goals.css'
+import styles from './Goals.module.css'
 
 const Goals = (props) => {
     const onClickHandler = (event) => {
         props.onDeleteSelectedGoal(event.target.id)
     }
     return (
-        <div className="goals-container">
+        <div className={styles["goals-container"]}>
             {props.content.map((item, index) => {
-                return <div key={index} id={item.id} className="goals-container__goal" onClick={onClickHandler}>{item.data}</div>
+                return <div key={index} id={item.id} className={styles["goals-container__goal"]} onClick={onClickHandler}>{item.data}</div>
             })}
         </div>
     );
