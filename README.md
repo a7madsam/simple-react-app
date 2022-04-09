@@ -1,6 +1,6 @@
 <h1>Simple React App</h1>
 <p>
-Simple web app created with reactJS</br>
+Simple Responsive web app created with reactJS</br>
 You can add texts in the form of a beautifully designed list</br>
 - The main objective of setting it up is to learn how to deal with <strong>dynamic design</strong> depending on some conditions and to deal with <strong>[module.css]</strong> files and what they offer like <strong>scoping CSS stylesheet</strong>
 </p>
