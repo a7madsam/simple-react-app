@@ -8,7 +8,7 @@ const Goals = (props) => {
     return (
         <div className={styles["goals-container"]}>
             {props.content.map((item, index) => {
-                return <div key={index} id={item.id} className={styles["goals-container__goal"]} onClick={onClickHandler}>{item.data}</div>
+                return <div key={index} id={item.id} title="Click to delete" className={styles["goals-container__goal"]} onClick={onClickHandler}>{item.data}</div>
             })}
         </div>
     );
